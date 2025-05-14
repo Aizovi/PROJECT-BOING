@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard </title>
+  <link rel="stylesheet" href="dashboard.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <header>
+        <div class="header-text">
+          <span class="name">BOING!</span>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div>
+          <ul>
+            <li class="nav-link active"><a href="#"><i class="bx bx-home-alt icon"></i><span class="text nav-text">Dashboard</span></a></li>
+            <li class="nav-link"><a href="profile.html"><i class="bx bx-user icon"></i><span class="text nav-text">Profile</span></a></li>
+            <li class="nav-link"><a href="lessons.html"><i class="bx bx-book icon"></i><span class="text nav-text">Lessons</span></a></li>
+            <li class="nav-link"><a href="theory.html"><i class='bx bx-book-open icon'></i><span class="text nav-text">Theory</span></a></li>
+            <li class="nav-link"><a href="problems.html"><i class="bx bx-calculator icon"></i><span class="text nav-text">Problems</span></a></li>
+            <li class="nav-link"><a href="1page.html"><i class="bx bx-log-out icon"></i><span class="text nav-text">Logout</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch"><span class="switch"></span></div>
+          </li>
+        </div>
+      </div>
+    </nav>  
+
+    <!-- OVERALL SECTION -->
+    <div class="container">
+      <h2 class="title" id="title">DASHBOARD</h2>
+      <p class="welcome">Welcome back, Alnura! Ready for your next challenge?</p>
+      <div class="quote-card">
+        <h3>MOTIVATIONAL QUOTE</h3>
+        <p id="quote-text"></p>
+        <p id="quote-author"></p>
+      </div>
+    
+      <div class="cards">
+        <div class="small-cards">
+            <div class="streaks">
+                <h4>STREAKS</h4>
+                <div class="streak-week">
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">M</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">TU</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">W</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">TH</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">F</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">ST</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                    <div class="day" onclick="toggleCheck(this)">
+                      <span class="day-label">SU</span>
+                      <span class="checkmark">✔</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="achievement">
+              <h4>TOPICS TO WORK ON</h4>
+              <div class="recommended-courses">
+                  <div class="course-card">
+                      <span class="difficulty easy">Easy</span>
+                      <div class="course-icon">🔭</div>
+                      <div class="course-title">Newton's Laws</div>
+                      <div class="course-info">5 lessons • 20 min</div>
+                      <div class="course-progress" style="width: 75%;"></div>
+                  </div>
+                  <div class="course-card">
+                      <span class="difficulty medium">Medium</span>
+                      <div class="course-icon">⚛️</div>
+                      <div class="course-title">Quantum Basics</div>
+                      <div class="course-info">8 lessons • 35 min</div>
+                      <div class="course-progress" style="width: 30%;"></div>
+                  </div>
+                  <div class="course-card">
+                      <span class="difficulty medium">Medium</span>
+                      <div class="course-icon">⚡</div>
+                      <div class="course-title">Electromagnetism</div>
+                      <div class="course-info">6 lessons • 25 min</div>
+                      <div class="course-progress" style="width: 0%;"></div>
+                  </div>
+                  <div class="course-card">
+                      <span class="difficulty hard">Hard</span>
+                      <div class="course-icon">🚀</div>
+                      <div class="course-title">Special Relativity</div>
+                      <div class="course-info">10 lessons • 45 min</div>
+                      <div class="course-progress" style="width: 10%;"></div>
+                  </div>
+              </div>  
+            </div>
+        </div>
+
+        <div class="last-lesson">
+            <h4>LAST LESSON</h4>
+            <div class="lesson-card card-kinematics" onclick="window.location.href='theory.html'">
+                <p class="lesson-brand">Boing!</p>
+                <h3 class="lesson-name">Kinematics</h3>
+                <p class="lesson-count">8 lessons</p>
+            </div>
+        </div>
+      </div>
+    </div>  
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

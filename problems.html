@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Problems section</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  </script>  
+  <link rel="stylesheet" href="problems.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <header>
+        <div class="header-text">
+          <span class="name">BOING!</span>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div>
+          <ul>
+            <li class="nav-link"><a href="dashboard.html"><i class="bx bx-home-alt icon"></i><span class="text nav-text">Dashboard</span></a></li>
+            <li class="nav-link"><a href="profile.html"><i class="bx bx-user icon"></i><span class="text nav-text">Profile</span></a></li>
+            <li class="nav-link"><a href="lessons.html"><i class="bx bx-book icon"></i><span class="text nav-text">Lessons</span></a></li>
+            <li class="nav-link"><a href="theory.html"><i class='bx bx-book-open icon'></i><span class="text nav-text">Theory</span></a></li>
+            <li class="nav-link active"><a href="#" onclick="showProblems()"><i class="bx bx-calculator icon"></i><span class="text nav-text">Problems</span></a></li>
+            <li class="nav-link"><a href="1page.html"><i class="bx bx-log-out icon"></i><span class="text nav-text">Logout</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch"><span class="switch"></span></div>
+          </li>
+        </div>
+      </div>
+    </nav>  
+        
+    <!-- PROBLEMS SECTION -->
+    <div id="problems-page" class="problems-page">
+        <h2 class="section-title">MY PROBLEMS</h2>
+        <div class="problem-list">
+
+        <div class="problem-card card-problem-kinematics" onclick="showProblemsKinematics()" >
+            <div class="problem-number">01</div>
+            <div class="problem-title">Kinematics</div>
+            <button class="start-btn">Start</button>
+        </div>
+
+        <div class="problem-card card-problem-dynamics">
+            <div class="problem-number">02</div>
+            <div class="problem-title">Dynamics</div>
+            <button class="start-btn">Start</button>
+        </div>
+
+        <div class="problem-card card-problem-statics">
+            <div class="problem-number">03</div>
+            <div class="problem-title">Statics</div>
+            <button class="start-btn">Start</button>
+        </div>
+
+        <div class="problem-card card-problem-impulse">
+            <div class="problem-number">04</div>
+            <div class="problem-title">Impulse & Energy</div>
+            <button class="start-btn">Start</button>
+        </div>
+
+        <div class="problem-card card-problem-thermo">
+            <div class="problem-number">05</div>
+            <div class="problem-title">Thermodynamics</div>
+            <button class="start-btn">Start</button>
+        </div>
+
+        <div class="problem-card card-problem-electrostatics">
+            <div class="problem-number">06</div>
+            <div class="problem-title">Electrostatics</div>
+            <button class="start-btn">Start</button>
+        </div>
+        </div>
+        
+        <div id="problem-section" style="display: none;">
+        <h2 class="problems-title">KINEMATICS PROBLEMS</h2>
+        <div id="problem-list"></div>
+        <button onclick="goBackToProblems()" class="back-button">← Back to Problems</button>
+        </div>
+    </div>
+
+  <script src="problems.js"></script>
+</body>
+</html>

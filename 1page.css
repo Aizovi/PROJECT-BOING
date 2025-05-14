@@ -1,0 +1,84 @@
+/* ===== Base Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Layout & Background ===== */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('bkgrnd13.jpg') no-repeat center center / cover;
+  padding: 2rem;
+}
+
+/* ===== Container ===== */
+.container {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  max-width: 700px;
+  width: 100%;
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Title ===== */
+h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Tagline ===== */
+.tagline {
+  font-size: 20px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+/* ===== Button ===== */
+.btn {
+  background-color: #fff;
+  color: #226c67;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #22436c;
+  color: #fff;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,572 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.preload *,
+body.preload *::before,
+body.preload *::after {
+  transition: none !important;
+}
+
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #6D40CE;
+    --primary-color: white;
+    --primary-color-light: #2a125d;
+    --toggle-color: #DDD;
+    --text-color: white;
+
+    /* ===== Transition ===== */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+    
+}
+
+body {
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-02);
+}
+  
+body.dark {
+    --body-color: #211c2f;
+    --sidebar-color: #3a2b5f;
+    --primary-color: #4b3978;
+    --primary-color-light: #5a4490;
+    --toggle-color: #a58bd4;
+    --text-color: #f2ebff;
+}
+
+/* Layout wrapper */
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .sidebar .header-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar li .icon {
+    font-size: 20px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar li .icon,
+  .sidebar li .text {
+    color: var(--text-color);
+    transition: var(--tran-02);
+  }
+  
+  .sidebar li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: var(--tran-04);
+  }
+  
+  
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+  
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+  
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+  color: var(--sidebar-color);
+}
+/* Active sidebar link - light mode */
+.sidebar li.active a {
+  background: white;
+}
+
+.sidebar li.active a .icon,
+.sidebar li.active a .text {
+  color: var(--sidebar-color);
+  font-weight: 600;
+}
+
+/* Active sidebar link - dark mode */
+body.dark .sidebar li.active a {
+  background: #4b3978; /* Light lavender shade for highlight */
+}
+
+body.dark .sidebar li.active a .icon,
+body.dark .sidebar li.active a .text {
+  color: white; /* Consistent with your purple theme */
+}
+   
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* makes bottom section go down */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    z-index: 1000;
+  }
+  
+  .menu-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menu-bar > div:last-child {
+    margin-top: auto; /* pushes toggle to bottom */
+  }
+  
+  .mode {
+    position: sticky;
+    bottom: 0;
+    background: var(--primary-color-light);
+    border-radius: 6px;
+  }
+  
+  
+.menu-bar .mode .moon-sun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+  
+.menu-bar .mode i {
+    position: absolute;
+    transition: var(--tran-03);
+}
+
+.menu-bar .mode .toggle-switch {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    background: var(--primary-color-light);
+    border-radius: 6px;
+}
+  
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+  
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    transition: var(--tran-03);
+}
+
+body.dark .switch::before {
+    left: 24px;
+}
+  
+
+.moon-sun .sun {
+    opacity: 0;
+    transition: var(--tran-03);
+}
+  
+.moon-sun .moon {
+    opacity: 1;
+    transition: var(--tran-03);
+}
+  
+body.dark .moon-sun .sun {
+    opacity: 1; 
+}
+  
+body.dark .moon-sun .moon {
+    opacity: 0;
+}
+
+.container {
+    margin-left: 250px;
+    padding: 40px 40px;
+    width: calc(100% - 270px);
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #6D40CE;
+}
+
+.welcome {
+    font-size: 23px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+  
+body.dark .title {
+    color: #a58bd4;
+}
+
+body.dark .welcome {
+    color: #fff;
+}
+  
+.quote-card {
+    width: calc(100% - 10px);
+    background-color: white;
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 1px 3px rgb(205, 200, 200);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .quote-card {
+    background: #4b3978;
+    box-shadow: none;
+}
+
+.quote-card h3 {
+    font-size: 22px;
+    font-weight: 550;
+    color: #2a125d;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+#quote-text {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+  
+#quote-author {
+    font-size: 15px;
+    text-align: right;
+    margin-top: 5px;
+    font-style: italic;
+    color: #000;
+}
+
+body.dark .quote-card h3{
+    color: rgb(193, 188, 188);
+}
+
+body.dark .quote-card #quote-text{
+    color: white;
+}
+
+body.dark .quote-card #quote-author{
+    color: white;
+}
+
+.cards {
+    display: inline-flex;
+    width: calc(100% - 25px);
+    height: 60%;
+    margin-top: 25px;
+}
+
+.small-cards {
+    display: block;
+    width: 50%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+/* ACHIEVEMENT CARD */
+body.dark .achievement h4{
+    color: rgb(193, 188, 188);
+}
+
+.recommended-courses {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.course-card {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+body.dark .course-card {
+  background: #4b3978;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.course-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.course-title {
+  font-weight: bold;
+  color: #2a125d;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+body.dark .course-title {
+  color: #efeef3;
+}
+
+.course-info {
+  font-size: 14px;
+  color: #666;
+  position: relative;
+  z-index: 1;
+}
+
+body.dark .course-info {
+  color: #b1a8d2;
+}
+
+.course-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: #7c4dff;
+}
+
+.difficulty {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0,0,0,0.1);
+  padding: 3px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+.difficulty.easy {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #2e7d32;
+}
+
+body.dark .difficulty.easy {
+  background-color: rgba(33, 69, 34, 0.836);
+  color: #13d71d;
+}
+
+.difficulty.medium {
+  background-color: rgba(255, 152, 0, 0.2);
+  color: #ef6c00;
+}
+
+.difficulty.hard {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #c62828;
+}
+
+h4 {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 550;
+    color: #2a125d;
+    transition: color 0.3s ease;
+}
+
+/* LAST LESSON CARD */
+.last-lesson {
+    width: 50%;
+    height: 95%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 2px 3px rgb(205, 200, 200);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: #000;
+    justify-items: center;
+}
+
+body.dark .last-lesson {
+    background: #4b3978;
+    box-shadow: none;
+}
+
+body.dark .last-lesson h4{
+    color: rgb(193, 188, 188);
+}
+
+.card-kinematics    { --color: #f7d276; }
+body.dark .card-kinematics { --color: #795e25; }
+
+.lesson-card {
+  background: var(--color);
+  padding: 20px 20px;
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+  .lesson-card:hover {
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  }
+  
+  .lesson-brand {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .lesson-name {
+    font-size: 25px;    
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .lesson-count {
+    margin-top: 6px;
+    font-size: 13px;
+    border-top: 1px solid rgba(255,255,255,0.6);
+    padding-top: 6px;
+  }
+
+
+
+/* STREAK SYSTEM */
+.streaks {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 3px rgb(205, 200, 200);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body.dark .streaks {
+    background: #4b3978;
+    box-shadow: none;
+}
+
+body.dark .streaks h4{
+  color: rgb(193, 188, 188);
+}
+
+.streak-week {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .day {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #f7eaea;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .day-label {
+    color: #2a125d;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .checkmark {
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    top: 100%;
+  }
+  
+  .day.checked {
+    background-color: orange;
+  }
+  
+  .day.checked .day-label {
+    top: 20%;
+    font-size: 10px;
+    color: white;
+    display: none;
+  }
+  
+  .day.checked .checkmark {
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+  }

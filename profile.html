@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="edit.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'/>
+</head>
+<body>
+    <div class="layout">
+        <nav class="sidebar">
+            <header>
+              <div class="header-text">
+                <span class="name">BOING!</span>
+              </div>
+            </header>
+      
+            <div class="menu-bar">
+              <div>
+                <ul>
+                  <li class="nav-link"><a href="dashboard.html"><i class="bx bx-home-alt icon"></i><span class="text nav-text">Dashboard</span></a></li>
+                  <li class="nav-link active"><a href="#"><i class="bx bx-user icon"></i><span class="text nav-text">Profile</span></a></li>
+                  <li class="nav-link"><a href="lessons.html"><i class="bx bx-book icon"></i><span class="text nav-text">Lessons</span></a></li>
+                  <li class="nav-link"><a href="theory.html"><i class='bx bx-book-open icon'></i><span class="text nav-text">Theory</span></a></li>
+                  <li class="nav-link"><a href="problems.html"><i class="bx bx-calculator icon"></i><span class="text nav-text">Problems</span></a></li>
+                  <li class="nav-link"><a href="1page.html"><i class="bx bx-log-out icon"></i><span class="text nav-text">Logout</span></a></li>
+                </ul>
+              </div>
+      
+              <div>
+                <li class="mode">
+                  <div class="moon-sun">
+                    <i class="bx bx-moon icon moon"></i>
+                    <i class="bx bx-sun icon sun"></i>
+                  </div>
+                  <span class="mode-text text">Dark Mode</span>
+                  <div class="toggle-switch"><span class="switch"></span></div>
+                </li>
+              </div>
+            </div>
+          </nav> 
+
+        <div class="container">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-header">
+                    <div class="profile-picture">
+                        <img src="https://discussions.apple.com/content/attachment/2535768c-bbfe-4041-8cea-c3c111581c37" alt="Profile">
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Alnura Assylbek</h1>
+                        
+                        <button class="edit-button" onclick="openModal()">Edit Profile</button>
+
+                    </div>
+                    <button class="button-primary">Start lessons</button>                    
+                </div>
+            </div>
+    
+            <!-- Achievements Section -->
+            <div class="achievements-section">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements</h2>
+                </div>
+                <div class="achievements-list">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🔭</div>
+                        <div class="achievement-title">Newton's Apprentice</div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⚡</div>
+                        <div class="achievement-title">Energy Enthusiast</div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🚀</div>
+                        <div class="achievement-title">Master of Motion</div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Topics Sections -->
+            <div class="topics-container">
+                <!-- Weakest Topics -->
+                <div class="topics-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Weakest Topics</h2>
+                    </div>
+                    <div class="topics-list">
+                        <div class="topic-item">
+                            <div class="topic-icon" style="background-color: #ffebee;">🌍</div>
+                            <div class="topic-info">
+                                <div class="topic-name">Жылдамдық</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill low" style="width: 28%;"></div>
+                                </div>
+                                <div class="progress-text">28% Correct</div>
+                            </div>
+                        </div>
+                        <div class="topic-item">
+                            <div class="topic-icon" style="background-color: #fff8e1;">🔥</div>
+                            <div class="topic-info">
+                                <div class="topic-name">Идеал газдар</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill low" style="width: 35%;"></div>
+                                </div>
+                                <div class="progress-text">35% Correct</div>
+                            </div>
+                        </div>
+                        <div class="topic-item">
+                            <div class="topic-icon" style="background-color: #e3f2fd;">🧲</div>
+                            <div class="topic-info">
+                                <div class="topic-name">Қысым</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill medium" style="width: 40%;"></div>
+                                </div>
+                                <div class="progress-text">40% Correct</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Strongest Topics -->
+                <div class="topics-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Strongest Topics</h2>
+                    </div>
+                    <div class="topics-list">
+                        <div class="topic-item">
+                            <div class="topic-icon" style="background-color: #e8f5e9;">🔍</div>
+                            <div class="topic-info">
+                                <div class="topic-name">Толқындық оптика</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill high" style="width: 95%;"></div>
+                                </div>
+                                <div class="progress-text">95% Correct</div>
+                            </div>
+                        </div>
+                        <div class="topic-item">
+                            <div class="topic-icon" style="background-color: #e0f7fa;">⚛️</div>
+                            <div class="topic-info">
+                                <div class="topic-name">Кванттық физика</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill high" style="width: 90%;"></div>
+                                </div>
+                                <div class="progress-text">90% Correct</div>
+                            </div>
+                        </div>
+                        <div class="topic-item">
+                            <div class="topic-icon" style="background-color: #f3e5f5;">⚙️</div>
+                            <div class="topic-info">
+                                <div class="topic-name">Күштер</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill high" style="width: 87%;"></div>
+                                </div>
+                                <div class="progress-text">87% Correct</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EDIT FORM PART -->
+            <div id="editModal" class="modal">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h1 class="form-title">Edit profile</h1>
+                        <p class="subtitle">Update your personal information</p>
+                        
+                        <div class="edit-picture">
+                            <img src="https://media.istockphoto.com/id/1175387759/vector/camera-icon.jpg?s=612x612&w=0&k=20&c=paC1ZkU31dH2B5epXqT_cYOyca5uqh4v0WpFUldCUBE=" alt="Profile picture">
+                        </div>
+                    </div>
+                    
+                    <form>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" placeholder="Enter your first name">
+                            </div>
+                            <div class="form-col">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Enter your last name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <div class="input-validated">
+                                <input type="email" id="email" placeholder="Enter your email" value="alnura@example.com">
+                                <span class="validation-icon">✓</span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Contact Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number">
+                            <p class="hint">We'll send you a verification code to this number</p>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-col">
+                                <label for="oldPassword">Old Password</label>
+                                <div style="position: relative;">
+                                    <input type="password" id="oldPassword" placeholder="Enter current password">
+                                    <button type="button" class="password-toggle">Show</button>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <label for="newPassword">New Password</label>
+                                <div style="position: relative;">
+                                    <input type="password" id="newPassword" placeholder="Enter new password">
+                                    <button type="button" class="password-toggle">Show</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="btn-container">
+                            <button type="button" class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                            <button type="submit" class="btn btn-primary" onclick="closeModal()">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    <script src="profile.js"></script>
+    </div>
+</body>
+</html>

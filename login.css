@@ -1,0 +1,98 @@
+ /* Base reset */
+ * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+
+ /* Full‐page gradient */
+ body {
+   height:100vh;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   background: url('loginphoto.jpg') no-repeat center center / cover; 
+
+ }
+
+ /* Frosted glass card */
+ .card {
+   width: 500px;
+   padding:2rem;
+   border-radius:18px;
+   background: rgba(255,255,255,0.2);
+   backdrop-filter: blur(10px);
+   color: #fff;
+   text-align:center;
+ }
+ .card h2 {
+   margin-bottom:1.5rem;
+   font-weight:800;
+   font-size: 35px;
+ }
+
+ /* Inputs */
+ .card .input-group {
+   margin-bottom:1.25rem;
+   text-align:left;
+ }
+ .card .input-group label {
+   display:block;
+   font-size: 18px;
+   margin-bottom:0.25rem;
+ }
+ .card .input-group input {
+   width:100%;
+   padding:0.5rem 0;
+   border:none;
+   border-bottom:1px solid rgba(255,255,255,0.3);
+   background:transparent;
+   color:#fff;
+   font-size:1rem;
+ }
+ .card .input-group input::placeholder {
+   color: rgba(255,255,255,0.9);
+ }
+
+ /* Remember me */
+ .card .options {
+   display:flex;
+   align-items:center;
+   font-size:0.85rem;
+   margin-bottom:1.5rem;
+ }
+ .card .options input {
+   margin-right:0.5rem;
+   width:16px; height:16px;
+ }
+
+ /* Button */
+ .card .btn {
+    display: block;
+    margin: 1.5rem auto;
+    width: 60%;             
+    padding: 0.75rem;
+    border: none;
+    border-radius: 999px;
+    background: #de69f5;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    text-align: center;     
+  }
+  
+ .card .btn:hover {
+   background: #943de0;
+ }
+
+ /* Footer links */
+ .card .footer {
+   margin-top:1.25rem;
+   font-size:15px;
+ }
+ .card .footer a {
+   color:#de69f5;
+   text-decoration:none;
+   margin-left:0.25rem;
+   font-weight:600;
+ }
+
+ 

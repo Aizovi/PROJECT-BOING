@@ -1,0 +1,515 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body.preload *,
+body.preload *::before,
+body.preload *::after {
+  transition: none !important;
+}
+
+:root {
+    /* ===== Colors ===== */
+    --body-color: #E4E9F7;
+    --sidebar-color: #6D40CE;
+    --primary-color: white;
+    --primary-color-light: #2a125d;
+    --toggle-color: #DDD;
+    --text-color: white;
+
+    /* ===== Transition ===== */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+    
+}
+
+body {
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-02);
+}
+  
+body.dark {
+    --body-color: #211c2f;
+    --sidebar-color: #3a2b5f;
+    --primary-color: #4b3978;
+    --primary-color-light: #5a4490;
+    --toggle-color: #a58bd4;
+    --text-color: #f2ebff;
+}
+
+/* Layout wrapper */
+.layout {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .sidebar .header-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .sidebar li {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar li .icon {
+    font-size: 20px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sidebar li .icon,
+  .sidebar li .text {
+    color: var(--text-color);
+    transition: var(--tran-02);
+  }
+  
+  .sidebar li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: var(--tran-04);
+  }
+  
+  
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text {
+    color: var(--text-color);
+}
+
+  
+.sidebar li a:hover {
+    background: var(--primary-color);
+}
+  
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+  color: var(--sidebar-color);
+}
+/* Active sidebar link - light mode */
+.sidebar li.active a {
+  background: white;
+}
+
+.sidebar li.active a .icon,
+.sidebar li.active a .text {
+  color: var(--sidebar-color);
+  font-weight: 600;
+}
+
+/* Active sidebar link - dark mode */
+body.dark .sidebar li.active a {
+  background: #4b3978; /* Light lavender shade for highlight */
+}
+
+body.dark .sidebar li.active a .icon,
+body.dark .sidebar li.active a .text {
+  color: white; /* Consistent with your purple theme */
+}
+   
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* makes bottom section go down */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    z-index: 1000;
+  }
+  
+  .menu-bar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menu-bar > div:last-child {
+    margin-top: auto; /* pushes toggle to bottom */
+  }
+  
+  .mode {
+    position: sticky;
+    bottom: 0;
+    background: var(--primary-color-light);
+    border-radius: 6px;
+  }
+  
+  
+.menu-bar .mode .moon-sun {
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+  
+.menu-bar .mode i {
+    position: absolute;
+    transition: var(--tran-03);
+}
+
+.menu-bar .mode .toggle-switch {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    background: var(--primary-color-light);
+    border-radius: 6px;
+}
+  
+.toggle-switch .switch {
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+}
+  
+.switch::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    transition: var(--tran-03);
+}
+
+body.dark .switch::before {
+    left: 24px;
+}
+  
+/* Hide sun icon by default */
+.moon-sun .sun {
+    opacity: 0;
+    transition: var(--tran-03);
+  }
+  
+  /* Show moon icon by default */
+  .moon-sun .moon {
+    opacity: 1;
+    transition: var(--tran-03);
+  }
+  
+  /* When dark mode is active, toggle visibility */
+  body.dark .moon-sun .sun {
+    opacity: 1;
+  }
+  
+  body.dark .moon-sun .moon {
+    opacity: 0;
+  }
+  
+/* Lessons Section Styles */
+#lessons-page {
+  margin-left: 250px;
+  padding: 40px;
+}
+
+.lessons-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #6D40CE;
+  margin-bottom: 10px;
+}
+
+.lesson-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual lesson card */
+.lesson-block {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f3fd;
+  padding: 18px 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+  border: 1px solid #e0def5;
+}
+
+.lesson-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Lesson Image */
+.lesson-block img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+/* Text content */
+.lesson-info {
+  flex: 1;
+  font-weight: 600;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #2a125d;
+}
+
+/* Start Button */
+.lesson-start-btn {
+  background-color: #c59df7;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 50px;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lesson-start-btn:hover {
+  background-color: #b185f4;
+}
+
+/* Dark Mode */
+body.dark .lesson-block {
+  background-color: #2b2b3c;
+  border-color: #444458;
+}
+
+body.dark .lesson-info {
+  color: #f1f1f1;
+}
+
+body.dark .lesson-start-btn {
+  background-color: #6c55a8;
+}
+
+body.dark .lesson-start-btn:hover {
+  background-color: #5c4795;
+}
+
+/* LESSON MAP GAME VIEW */
+.main-wrapper {
+  margin-left: 250px; /* sidebar width */
+  width: calc(100% - 250px);
+  height: 100vh;
+  position: relative;
+  display: none;          /* Hidden by default */
+  z-index: 50;            /* Make sure it's above sidebar bg if needed */
+  overflow: hidden;       /* prevent scroll leaks */
+}
+
+.main-wrapper.show {
+  display: block;
+}
+
+/* game area + background setup */
+.game-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Button container */
+.buttons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Level buttons */
+.level-button {
+  position: absolute;
+  width: 70px;
+  height: 65px;
+  border-radius: 50%;
+  border: 5px solid #ffd700;
+  background-color: #1e40af;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #162d7a, 0 10px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.level-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 0 #162d7a, 0 12px 18px rgba(0, 0, 0, 0.7);
+}
+
+.level-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #162d7a, 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.back-to-lessons-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  bottom: 90%;
+  transform: translateX(-50%);
+  background-color: #f1c40f;
+  color: #1e1e1e;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #c39d09, 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+
+.back-to-lessons-btn:hover {
+  background-color: #ffdd33;
+  box-shadow: 0 6px 0 #b78900, 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Quiz Section */
+.quiz-section {
+  flex-grow: 1;
+  padding: 40px;
+  max-width: 800px;
+  color: #1a1a1a;
+}
+
+body.dark .quiz-section {
+  color: #f1f1f1;
+}
+
+.quiz-section h2 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#quiz-box {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Buttons */
+.quiz-section button {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  min-height: 45px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color-light);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.quiz-section button:hover {
+  background: var(--sidebar-color);
+}
+
+.feedback.correct {
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feedback.wrong {
+  color: #dc3545;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Final result */
+  .result-full-clean {
+    background-color: var(--primary-color-light); /* or keep your custom color */
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* fills rest of screen */
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 22px;
+    text-align: center;
+  }
+  
+  .result-full-clean h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .result-full-clean p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .result-full-clean button {
+    background: var(--sidebar-color);
+    text-align: center;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .result-full-clean button:hover {
+    background: #3e1e99;
+  }
+  

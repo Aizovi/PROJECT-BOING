@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Theory section</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  </script>  
+  <link rel="stylesheet" href="theory.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <header>
+        <div class="header-text">
+          <span class="name">BOING!</span>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div>
+          <ul>
+            <li class="nav-link"><a href="dashboard.html"><i class="bx bx-home-alt icon"></i><span class="text nav-text">Dashboard</span></a></li>
+            <li class="nav-link"><a href="profile.html"><i class="bx bx-user icon"></i><span class="text nav-text">Profile</span></a></li>
+            <li class="nav-link"><a href="lessons.html"><i class="bx bx-book icon"></i><span class="text nav-text">Lessons</span></a></li>
+            <li class="nav-link active"><a href="#" onclick="showTheorySection()"><i class='bx bx-book-open icon'></i><span class="text nav-text">Theory</span></a></li>
+            <li class="nav-link"><a href="problems.html"><i class="bx bx-calculator icon"></i><span class="text nav-text">Problems</span></a></li>
+            <li class="nav-link"><a href="1page.html"><i class="bx bx-log-out icon"></i><span class="text nav-text">Logout</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch"><span class="switch"></span></div>
+          </li>
+        </div>
+      </div>
+    </nav>  
+
+    <!-- THEORY SECTION -->
+    <div class="lessons-container">
+      <h2 class="lessons-title" id="lessons-title">MY THEORIES</h2>
+    
+      <div class="lesson-grid" id="card-section">
+        <div class="lesson-card card-kinematics" onclick="showTheory()">
+          <p class="lesson-brand">Boing!</p>
+          <h3 class="lesson-name">Kinematics</h3>
+          <p class="lesson-count">8 lessons</p>
+        </div>
+    
+        <div class="lesson-card card-dynamics">
+          <p class="lesson-brand">Boing!</p>
+          <h3 class="lesson-name">Dynamics</h3>
+          <p class="lesson-count">5 lessons</p>
+        </div>
+    
+        <div class="lesson-card card-statics">
+          <p class="lesson-brand">Boing!</p>
+          <h3 class="lesson-name">Statics</h3>
+          <p class="lesson-count">3 lessons</p>
+        </div>
+    
+        <div class="lesson-card card-impulse">
+          <p class="lesson-brand">Boing!</p>
+          <h3 class="lesson-name">Impulse & Energy</h3>
+          <p class="lesson-count">8 lessons</p>
+        </div>
+    
+        <div class="lesson-card card-thermo">
+          <p class="lesson-brand">Boing!</p>
+          <h3 class="lesson-name">Thermodynamics</h3>
+          <p class="lesson-count">7 lessons</p>
+        </div>
+    
+        <div class="lesson-card card-electrostatics">
+          <p class="lesson-brand">Boing!</p>
+          <h3 class="lesson-name">Electrostatics</h3>
+          <p class="lesson-count">10 lessons</p>
+        </div>
+      </div>
+    
+      <div id="theory-section" style="display: none;">
+        <h2 class="lessons-title">KINEMATICS THEORY</h2>
+        <div id="theory-list"></div>
+        <button onclick="goBackToCards()" class="back-button">← Back to Theories</button>
+      </div>
+    </div>  
+
+  <script src="theory.js"></script>
+</body>
+</html>

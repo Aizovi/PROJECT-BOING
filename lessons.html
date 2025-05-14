@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lessons section</title>
+  <script>
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  </script>  
+  <link rel="stylesheet" href="lessons.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <header>
+        <div class="header-text">
+          <span class="name">BOING!</span>
+        </div>
+      </header>
+
+      <div class="menu-bar">
+        <div>
+          <ul>
+            <li class="nav-link"><a href="dashboard.html"><i class="bx bx-home-alt icon"></i><span class="text nav-text">Dashboard</span></a></li>
+            <li class="nav-link"><a href="profile.html"><i class="bx bx-user icon"></i><span class="text nav-text">Profile</span></a></li>
+            <li class="nav-link active"><a href="#" onclick="showLessons()" ><i class="bx bx-book icon"></i><span class="text nav-text">Lessons</span></a></li>
+            <li class="nav-link"><a href="theory.html"><i class='bx bx-book-open icon'></i><span class="text nav-text">Theory</span></a></li>
+            <li class="nav-link"><a href="problems.html"><i class="bx bx-calculator icon"></i><span class="text nav-text">Problems</span></a></li>
+            <li class="nav-link"><a href="1page.html"><i class="bx bx-log-out icon"></i><span class="text nav-text">Logout</span></a></li>
+          </ul>
+        </div>
+
+        <div>
+          <li class="mode">
+            <div class="moon-sun">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark Mode</span>
+            <div class="toggle-switch"><span class="switch"></span></div>
+          </li>
+        </div>
+      </div>
+    </nav>  
+
+    <!-- LESSONS SECTION -->
+    <div id="lessons-page" class="page-section">
+        <h2 class="lessons-title">MY LESSONS</h2>
+        <div class="lesson-list">
+          
+          <div class="lesson-block">
+            <img src="yellow.png" alt="Kinematics">
+            <div class="lesson-info">Kinematics</div>
+            <button class="lesson-start-btn" onclick="showLessonMap()">Start</button>
+          </div>        
+        
+          <div class="lesson-block">
+            <img src="red.png" alt="Dynamics">
+            <div class="lesson-info">Dynamics</div>
+            <button class="lesson-start-btn">start</button>
+          </div>
+  
+          <div class="lesson-block">
+            <img src="purple.png" alt="Statics">
+            <div class="lesson-info">Statics</div>
+            <button class="lesson-start-btn">start</button>
+          </div>
+  
+          <div class="lesson-block">
+            <img src="blue.png" alt="Impulse & Energy">
+            <div class="lesson-info">Impulse & Energy</div>
+            <button class="lesson-start-btn">start</button>
+          </div>
+  
+          <div class="lesson-block">
+            <img src="gray.png" alt="Thermodynamics">
+            <div class="lesson-info">Thermodynamics</div>
+            <button class="lesson-start-btn">start</button>
+          </div>
+  
+          <div class="lesson-block">
+            <img src="green.png" alt="Electrostatics">
+            <div class="lesson-info">Electrostatics</div>
+            <button class="lesson-start-btn">start</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="main-wrapper" id="main-wrapper"> <!-- Must have ID -->
+        <div class="game-area">
+          <img src="naturebkgrnd.JPG" class="background" />
+          <div class="buttons" id="map-buttons">
+            <!-- Your level buttons -->
+            <button class="level-button" style="top: 85%; left: 52%;" onclick="startQuiz()">1</button>
+            <button class="level-button" style="top: 60%; left: 55%;">2</button>
+            <button class="level-button" style="top: 64%; left: 38%;">3</button>
+            <button class="level-button" style="top: 64%; left: 12%;">4</button>
+            <button class="level-button" style="top: 38%; left: 22%;">5</button>
+            <button class="level-button" style="top: 22%; left: 44%;">6</button>
+            <button class="level-button" style="top: 6%; left: 60%;">7</button>
+  
+            <!-- ✅ BACK BUTTON -->
+            <button class="back-to-lessons-btn" onclick="goBackToLessonCards()">← Back to Lessons</button>
+          </div>  
+  
+          <div class="quiz-section" id="quiz-section">
+            <h2>Physics Quiz</h2>
+            <div id="quiz-box">Loading questions...</div>
+          </div>        
+        </div>
+      </div>  
+  </div>
+  <script src="lessons.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+[
+  {
+    "question": "A body starts with an initial velocity of 20 m/s and accelerates at 7 m/s\u00b2 for 8 seconds. What is its final velocity?",
+    "options": [
+      "76 m/s",
+      "81 m/s",
+      "73 m/s",
+      "78 m/s"
+    ],
+    "answer": "76 m/s",
+    "explanation": "v = u + at = 20 + 7\u00d78 = 76 m/s"
+  },
+  {
+    "question": "An object moves with u = 20 m/s and acceleration a = 7 m/s\u00b2 for 8 seconds. What is the displacement?",
+    "options": [
+      "384 m",
+      "387 m",
+      "380 m",
+      "386 m"
+    ],
+    "answer": "384 m",
+    "explanation": "s = ut + 0.5at\u00b2 = 20\u00d78 + 0.5\u00d77\u00d78\u00b2 = 384 m"
+  },
+  {
+    "question": "A body starts with an initial velocity of 16 m/s and accelerates at 8 m/s\u00b2 for 5 seconds. What is its final velocity?",
+    "options": [
+      "56 m/s",
+      "61 m/s",
+      "53 m/s",
+      "58 m/s"
+    ],
+    "answer": "56 m/s",
+    "explanation": "v = u + at = 16 + 8\u00d75 = 56 m/s"
+  },
+  {
+    "question": "An object moves with u = 16 m/s and acceleration a = 8 m/s\u00b2 for 5 seconds. What is the displacement?",
+    "options": [
+      "180 m",
+      "183 m",
+      "176 m",
+      "182 m"
+    ],
+    "answer": "180 m",
+    "explanation": "s = ut + 0.5at\u00b2 = 16\u00d75 + 0.5\u00d78\u00d75\u00b2 = 180 m"
+  },
+  {
+    "question": "A body starts with an initial velocity of 18 m/s and accelerates at 6 m/s\u00b2 for 8 seconds. What is its final velocity?",
+    "options": [
+      "66 m/s",
+      "71 m/s",
+      "63 m/s",
+      "68 m/s"
+    ],
+    "answer": "66 m/s",
+    "explanation": "v = u + at = 18 + 6\u00d78 = 66 m/s"
+  }
+]
