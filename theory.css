@@ -250,13 +250,13 @@ body.dark .switch::before {
     font-size: 30px;
     font-weight: 700;
     color: #6D40CE; /* ярко-синий в светлой теме */
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     transition: color 0.3s ease;
   }
   
   /* Dark mode color for section title */
   body.dark .lessons-title {
-    color: #a58bd4; /* мягкий светло-фиолетовый */
+    color: #6D40CE; /* мягкий светло-фиолетовый */
   }
   
  

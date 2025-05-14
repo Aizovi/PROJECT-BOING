@@ -253,7 +253,7 @@ body.dark .switch::before {
 /* Individual lesson card */
 .lesson-block {
   display: flex;
-  width: 1200px;
+  width: 1250px;
   height: 120px;
   align-items: center;
   justify-content: space-between;

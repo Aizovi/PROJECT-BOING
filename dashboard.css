@@ -245,7 +245,7 @@ body.dark .moon-sun .moon {
 .welcome {
     font-size: 23px;
     font-weight: 600;
-    color: #000;
+    color: #2a125d;
     margin-bottom: 20px;
     transition: color 0.3s ease;
 }
@@ -259,7 +259,7 @@ body.dark .welcome {
 }
   
 .quote-card {
-    width: calc(100% - 10px);
+    width: calc(100% - 22px);
     background-color: white;
     border-radius: 16px;
     padding: 30px 40px;
@@ -272,12 +272,16 @@ body.dark .quote-card {
     box-shadow: none;
 }
 
-.quote-card h3 {
+.quote-title {
     font-size: 22px;
-    font-weight: 550;
+    font-weight: 700;
     color: #2a125d;
     margin-bottom: 5px;
     transition: color 0.3s ease;
+}
+
+body.dark .quote-title {
+  color: #a58bd4;
 }
 
 #quote-text {
@@ -292,10 +296,6 @@ body.dark .quote-card {
     margin-top: 5px;
     font-style: italic;
     color: #000;
-}
-
-body.dark .quote-card h3{
-    color: rgb(193, 188, 188);
 }
 
 body.dark .quote-card #quote-text{
@@ -321,8 +321,17 @@ body.dark .quote-card #quote-author{
 }
 
 /* ACHIEVEMENT CARD */
-body.dark .achievement h4{
-    color: rgb(193, 188, 188);
+.achievement-title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a125d;
+    transition: color 0.3s ease;
+}
+
+body.dark .achievement-title{
+    color: #a58bd4;
 }
 
 .recommended-courses {
@@ -333,11 +342,12 @@ body.dark .achievement h4{
 }
 
 .course-card {
-  background-color: #f5f5f5;
+  background-color: white;
   border-radius: 16px;
   padding: 20px;
   transition: transform 0.3s;
   cursor: pointer;
+  box-shadow: 1px 3px rgb(205, 200, 200);
   position: relative;
   overflow: hidden;
 }
@@ -361,6 +371,7 @@ body.dark .course-card {
 .course-title {
   font-weight: bold;
   color: #2a125d;
+  font-size: 22px;
   margin-bottom: 5px;
   position: relative;
   z-index: 1;
@@ -419,21 +430,13 @@ body.dark .difficulty.easy {
   color: #c62828;
 }
 
-h4 {
-    margin-top: 5px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 550;
-    color: #2a125d;
-    transition: color 0.3s ease;
-}
-
 /* LAST LESSON CARD */
 .last-lesson {
     width: 50%;
-    height: 95%;
+    height: 530px;
     background-color: white;
-    border-radius: 30px;
+    border-radius: 16px;
+    padding: 15px 15px;
     box-shadow: 2px 3px rgb(205, 200, 200);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: #000;
@@ -445,8 +448,18 @@ body.dark .last-lesson {
     box-shadow: none;
 }
 
-body.dark .last-lesson h4{
-    color: rgb(193, 188, 188);
+.last-lesson-title {
+  font-weight: 700;
+  color: #2a125d;
+  font-size: 22px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+body.dark .last-lesson-title{
+    color: #a58bd4;
 }
 
 .card-kinematics    { --color: #f7d276; }
@@ -501,6 +514,7 @@ body.dark .card-kinematics { --color: #795e25; }
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 body.dark .streaks {
@@ -508,8 +522,17 @@ body.dark .streaks {
     box-shadow: none;
 }
 
-body.dark .streaks h4{
-  color: rgb(193, 188, 188);
+.streak-title {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a125d;
+    transition: color 0.3s ease;
+}
+
+body.dark .streak-title{
+  color: #a58bd4;
 }
 
 .streak-week {
