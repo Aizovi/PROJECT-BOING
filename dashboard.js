@@ -23,16 +23,18 @@ window.addEventListener("load", () => {
     document.body.classList.remove("preload");
   });
 
-fetch('quotes.json')
+fetch('https://quoteslate.vercel.app/api/quotes/random')
   .then(response => response.json())
   .then(data => {
-    const randomIndex = Math.floor(Math.random() * data.length);
-    const quote = data[randomIndex];
-    document.getElementById("quote-text").textContent = `"${quote.q}"`;
-    document.getElementById("quote-author").textContent = `— ${quote.a}`;
+    const quote = data.quote;
+    const author = data.author;
+    document.getElementById("quote-text").textContent = `"${quote}"`;
+    document.getElementById("quote-author").textContent = `— ${author}`;
   })
   .catch(error => {
-    console.error("Error loading quotes:", error);
+    console.error("Error fetching quote:", error);
+    document.getElementById("quote-text").textContent = "Failed to load quote.";
+    document.getElementById("quote-author").textContent = "";
   });
 
 // Streak toggler

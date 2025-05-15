@@ -89,12 +89,26 @@
           </div>
         </div>
       </div>
+
+      <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="toggleMusic()" class="music-toggle">🎵</button>
+
+      
+      <button onclick="toggleRabbit()" class="rabbit-toggle">🐰</button>
+      <div id="floating-rabbit">
+        <div class="bubble" id="rabbit-bubble">Good luck!</div>
+        <img src="https://img.icons8.com/?size=100&id=hopN4KhliyoJ&format=png&color=000000" alt="Rabbit">
+      </div>
+
   
       <div class="main-wrapper" id="main-wrapper"> <!-- Must have ID -->
         <div class="game-area">
           <img src="naturebkgrnd.JPG" class="background" />
           <div class="buttons" id="map-buttons">
             <!-- Your level buttons -->
+            <div id="level1-stars-display" class="star-display" style="top: 75%; left: 53%;"></div>
             <button class="level-button" style="top: 85%; left: 52%;" onclick="startQuiz()">1</button>
             <button class="level-button" style="top: 60%; left: 55%;">2</button>
             <button class="level-button" style="top: 64%; left: 38%;">3</button>
