@@ -1,57 +1,57 @@
 [
   {
-    "question": "A body starts with an initial velocity of 20 m/s and accelerates at 7 m/s\u00b2 for 8 seconds. What is its final velocity?",
+    "question": "Дене бастапқы 20 м/с жылдамдықпен қозғалып, 7 м/с² үдеумен 8 секунд қозғалды. Оның соңғы жылдамдығы қандай болады?",
     "options": [
-      "76 m/s",
-      "81 m/s",
-      "73 m/s",
-      "78 m/s"
+      "76 м/с",
+      "81 м/с",
+      "73 м/с",
+      "78 м/с"
     ],
-    "answer": "76 m/s",
-    "explanation": "v = u + at = 20 + 7\u00d78 = 76 m/s"
+    "answer": "76 м/с",
+    "explanation": "v = u + at = 20 + 7×8 = 76 м/с"
   },
   {
-    "question": "An object moves with u = 20 m/s and acceleration a = 7 m/s\u00b2 for 8 seconds. What is the displacement?",
+    "question": "Дене u = 20 м/с бастапқы жылдамдықпен және a = 7 м/с² үдеумен 8 секунд қозғалды. Қозғалыс ара қашықтығы қандай?",
     "options": [
-      "384 m",
-      "387 m",
-      "380 m",
-      "386 m"
+      "384 м",
+      "387 м",
+      "380 м",
+      "386 м"
     ],
-    "answer": "384 m",
-    "explanation": "s = ut + 0.5at\u00b2 = 20\u00d78 + 0.5\u00d77\u00d78\u00b2 = 384 m"
+    "answer": "384 м",
+    "explanation": "s = ut + 0.5at² = 20×8 + 0.5×7×8² = 384 м"
   },
   {
-    "question": "A body starts with an initial velocity of 16 m/s and accelerates at 8 m/s\u00b2 for 5 seconds. What is its final velocity?",
+    "question": "Дене бастапқы 16 м/с жылдамдықпен қозғалып, 8 м/с² үдеумен 5 секунд қозғалды. Оның соңғы жылдамдығы қандай болады?",
     "options": [
-      "56 m/s",
-      "61 m/s",
-      "53 m/s",
-      "58 m/s"
+      "56 м/с",
+      "61 м/с",
+      "53 м/с",
+      "58 м/с"
     ],
-    "answer": "56 m/s",
-    "explanation": "v = u + at = 16 + 8\u00d75 = 56 m/s"
+    "answer": "56 м/с",
+    "explanation": "v = u + at = 16 + 8×5 = 56 м/с"
   },
   {
-    "question": "An object moves with u = 16 m/s and acceleration a = 8 m/s\u00b2 for 5 seconds. What is the displacement?",
+    "question": "Дене u = 16 м/с бастапқы жылдамдықпен және a = 8 м/с² үдеумен 5 секунд қозғалды. Қозғалыс ара қашықтығы қандай?",
     "options": [
-      "180 m",
-      "183 m",
-      "176 m",
-      "182 m"
+      "180 м",
+      "183 м",
+      "176 м",
+      "182 м"
     ],
-    "answer": "180 m",
-    "explanation": "s = ut + 0.5at\u00b2 = 16\u00d75 + 0.5\u00d78\u00d75\u00b2 = 180 m"
+    "answer": "180 м",
+    "explanation": "s = ut + 0.5at² = 16×5 + 0.5×8×5² = 180 м"
   },
   {
-    "question": "A body starts with an initial velocity of 18 m/s and accelerates at 6 m/s\u00b2 for 8 seconds. What is its final velocity?",
+    "question": "Дене бастапқы 18 м/с жылдамдықпен қозғалып, 6 м/с² үдеумен 8 секунд қозғалды. Оның соңғы жылдамдығы қандай болады?",
     "options": [
-      "66 m/s",
-      "71 m/s",
-      "63 m/s",
-      "68 m/s"
+      "66 м/с",
+      "71 м/с",
+      "63 м/с",
+      "68 м/с"
     ],
-    "answer": "66 m/s",
-    "explanation": "v = u + at = 18 + 6\u00d78 = 66 m/s"
+    "answer": "66 м/с",
+    "explanation": "v = u + at = 18 + 6×8 = 66 м/с"
   }
 ]

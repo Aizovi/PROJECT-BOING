@@ -1,98 +1,98 @@
 [
   {
-    "question": "A ball is thrown vertically upward from the ground at a speed of 4 m/s. What distance will it cover in the first second?",
-    "answer": "2.2 m"
+    "question": "Доп жерден 4 м/с жылдамдықпен тігінен жоғары лақтырылады. Бірінші секундта ол қандай қашықтықты өтеді?",
+    "answer": "2.2 м"
   },
   {
-    "question": "A stone is dropped from an aerostat at 100 m height. If the aerostat ascends uniformly at 5 m/s, how long will it take for the stone to reach the ground?",
-    "answer": "5 s"
+    "question": "Тас 100 м биіктікте бірқалыпты жоғары көтеріліп бара жатқан аэростаттан тасталды. Егер аэростат 5 м/с жылдамдықпен көтерілсе, тас жерге қанша уақытта түседі?",
+    "answer": "5 с"
   },
   {
-    "question": "A load is dropped from a stationary helicopter at 180 m height. How long will it take to reach the ground?",
-    "answer": "6 s"
+    "question": "Жүк қозғалыссыз тұрған тікұшақтан 180 м биіктіктен тасталды. Ол жерге қанша уақытта жетеді?",
+    "answer": "6 с"
   },
   {
-    "question": "A motorboat takes 4 hours downstream and 7 hours upstream between two points. What is the time taken in still water for the same distance?",
-    "answer": "5 hours"
+    "question": "Қайық екі нүкте арасында төмен ағыс бойымен 4 сағат, ал жоғары ағысқа қарсы 7 сағатта барады. Сол қашықтықты тұнық суда қанша уақытта жүреді?",
+    "answer": "5 сағат"
   },
   {
-    "question": "A stone is thrown at 10 m/s at a 45° angle to the horizon. What is the maximum height it reaches? (g = 10 m/s²)",
-    "answer": "2.5 m"
+    "question": "Тас 10 м/с жылдамдықпен 45° бұрышпен көкжиекке лақтырылады. Ол қандай биіктікке дейін көтеріледі? (g = 10 м/с²)",
+    "answer": "2.5 м"
   },
   {
-    "question": "A car moves around a curve with a constant speed of 10 m/s. If the radius is 50 m, what is the centripetal acceleration?",
-    "answer": "2 m/s²"
+    "question": "Автокөлік 10 м/с тұрақты жылдамдықпен айналма жолмен қозғалады. Егер радиусы 50 м болса, центрге тартқыш үдеуі қандай?",
+    "answer": "2 м/с²"
   },
   {
-    "question": "What is the direction of velocity at any point in curvilinear motion?",
-    "answer": "Tangent to the trajectory"
+    "question": "Қисық сызықты қозғалыста кез келген нүктедегі жылдамдықтың бағыты қандай?",
+    "answer": "Траекторияға жанама"
   },
   {
-    "question": "A load tied to a string completes a circle with radius 40 cm in 2 seconds. What is its linear speed?",
-    "answer": "1.3 m/s"
+    "question": "Жіпке байланған жүк 40 см радиуспен шеңбер бойымен 2 секундта толық айналым жасайды. Оның сызықтық жылдамдығы қандай?",
+    "answer": "1.3 м/с"
   },
   {
-    "question": "Two discs of radii 8 cm and 32 cm are connected at the edges. If the second disc rotates at 16π rad/s, what is the angular speed of the first disc?",
-    "answer": "64π rad/s"
+    "question": "Радиустары 8 см және 32 см болатын екі диск шеттерінен байланысқан. Егер үлкен диск 16π рад/с жылдамдықпен айналса, кіші дискінің бұрыштық жылдамдығы қандай болады?",
+    "answer": "64π рад/с"
   },
   {
-    "question": "A point completes one full rotation in 5 seconds. What is its angular speed?",
-    "answer": "1.26 rad/s"
+    "question": "Бір нүкте толық айналымды 5 секундта жасайды. Оның бұрыштық жылдамдығы қандай?",
+    "answer": "1.26 рад/с"
   },
   {
-    "question": "Earth is 1.5×10⁸ km from the Sun and completes one orbit in 365 days. What is its orbital speed?",
-    "answer": "30 km/s"
+    "question": "Жер Күннен 1.5×10⁸ км қашықтықта орналасқан және бір айналымды 365 күнде жасайды. Оның орбиталық жылдамдығы қандай?",
+    "answer": "30 км/с"
   },
   {
-    "question": "A wheel of radius 10 cm rotates at 3 rad/s. What is its linear velocity?",
-    "answer": "0.3 m/s"
+    "question": "10 см радиусы бар дөңгелек 3 рад/с жылдамдықпен айналады. Оның сызықтық жылдамдығы қандай?",
+    "answer": "0.3 м/с"
   },
   {
-    "question": "On a rotating flywheel, the outer edge speed is 6 m/s and a point 15 cm closer to the center moves at 5.5 m/s. What is the flywheel's radius?",
-    "answer": "180 cm"
+    "question": "Айналып тұрған маховиктің шеткі нүктесінің жылдамдығы 6 м/с, ал ортасына 15 см жақын орналасқан нүктенің жылдамдығы 5.5 м/с. Маховиктің радиусы қандай?",
+    "answer": "180 см"
   },
   {
-    "question": "A body travels 5 m on a circular path in 2 seconds. If its period is 5 s, what is the centripetal acceleration?",
-    "answer": "3.14 m/s²"
+    "question": "Дене шеңбер бойымен 5 м қашықтықты 2 секундта өтеді. Егер айналым периоды 5 с болса, центрге тартқыш үдеу қандай?",
+    "answer": "3.14 м/с²"
   },
   {
-    "question": "A ball is thrown horizontally at 10 m/s from a 10 m high balcony. What is its speed upon hitting the ground?",
-    "answer": "17 m/s"
+    "question": "Доп 10 м/с жылдамдықпен көлденең лақтырылады, балконның биіктігі 10 м. Жерге түскен сәттегі жылдамдығы қандай?",
+    "answer": "17 м/с"
   },
   {
-    "question": "A motorcyclist moves around a 15 m diameter circus ring in 15 minutes. What is the centripetal acceleration?",
-    "answer": "0.365 mm/s²"
+    "question": "Мотоциклші диаметрі 15 м болатын цирк аренасы бойымен 15 минутта жүріп өтеді. Оның центрге тартқыш үдеуі қандай?",
+    "answer": "0.365 мм/с²"
   },
   {
-    "question": "A car starts braking with an initial speed of 10 m/s and acceleration of -1 m/s². What distance does it travel in 3 seconds?",
-    "answer": "4.5 m"
+    "question": "Автокөлік бастапқы 10 м/с жылдамдықпен тежеуді бастайды, үдеуі -1 м/с². Ол 3 секундта қандай қашықтық өтеді?",
+    "answer": "4.5 м"
   },
   {
-    "question": "A car accelerates from rest at 0.5 m/s² until it reaches 10 m/s. What distance does it cover?",
-    "answer": "100 m"
+    "question": "Автокөлік 0.5 м/с² үдеумен қозғалуды бастап, 10 м/с жылдамдыққа жетеді. Ол қандай қашықтық өтеді?",
+    "answer": "100 м"
   },
   {
-    "question": "An escalator lifts a person in 2 minutes. If the person walks twice as fast, the lift takes only 80 seconds. What is the lift time if the person stands still?",
-    "answer": "240 s"
+    "question": "Эскалатор адамды 2 минутта көтереді. Егер адам екі есе жылдам жүрсе, көтерілу уақыты 80 секунд болады. Егер адам тұрса, эскалатор оны қанша уақытта көтереді?",
+    "answer": "240 с"
   },
   {
-    "question": "A car accelerates from 15 m/s to 90 km/h at 1 m/s². What distance does it cover?",
-    "answer": "200 m"
+    "question": "Автокөлік 15 м/с бастапқы жылдамдықпен 90 км/сағ дейін 1 м/с² үдеумен қозғалады. Қандай қашықтық өтеді?",
+    "answer": "200 м"
   },
   {
-    "question": "One car moves north at 80 km/h, another east at 60 km/h. What is the second car’s speed relative to the first?",
-    "answer": "100 km/h"
+    "question": "Бір автокөлік солтүстікке 80 км/сағ жылдамдықпен, екіншісі шығысқа 60 км/сағ жылдамдықпен қозғалады. Екіншісінің біріншісіне қатысты жылдамдығы қандай?",
+    "answer": "100 км/сағ"
   },
   {
-    "question": "A 560 m freight train and a 120 m express train travel parallel in the same direction at 48.6 km/h and 102.6 km/h respectively. How long does it take for the express to pass the freight train?",
-    "answer": "45.33 s"
+    "question": "Ұзындығы 560 м жүк пойызы мен 120 м экспресс пойызы бір бағытта параллель қозғалады. Жүк пойызы 48.6 км/сағ, ал экспресс 102.6 км/сағ жылдамдықпен жүреді. Экспресс жүк пойызынан толық өту үшін қанша уақыт қажет?",
+    "answer": "45.33 с"
   },
   {
-    "question": "A car moves at 15 m/s and a cyclist at 5 m/s in the same direction. How far apart are they after 10 minutes?",
-    "answer": "6000 m"
+    "question": "Автокөлік 15 м/с, велосипедші 5 м/с жылдамдықпен бір бағытта қозғалады. 10 минуттан кейін олардың ара қашықтығы қандай болады?",
+    "answer": "6000 м"
   },
   {
-    "question": "A boat sails 2 km northeast and then 1 km north. What is its total distance and displacement?",
-    "answer": "3 km, 2.78 km"
+    "question": "Қайық алдымен солтүстік-шығысқа 2 км, кейін солтүстікке 1 км жүзді. Жалпы жүрген жол мен орын ауыстыруы қандай?",
+    "answer": "3 км, 2.78 км"
   }
 ]

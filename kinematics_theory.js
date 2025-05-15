@@ -1,59 +1,58 @@
 [
-    {
-      "title": "What is Physics?",
-      "content": "The word 'physics' comes from the Greek word 'physis', meaning 'nature'. Aristotle was the first to use it, and M.V. Lomonosov introduced it into the Russian language."
-    },
-    {
-      "title": "What are Phenomena?",
-      "content": "Phenomena are changes occurring in bodies and substances around us. Physical phenomena are those that change a state or property without altering the substance’s composition (e.g., mechanical, thermal, magnetic, light phenomena)."
-    },
-    {
-      "title": "What is Mechanics?",
-      "content": "Mechanics is a branch of physics studying the motion of objects, the laws governing it, and the reasons for such motion."
-    },
-    {
-      "title": "What is Kinematics?",
-      "content": "Kinematics is a part of mechanics that describes motion mathematically without considering its causes."
-    },
-    {
-      "title": "What is Mechanical Motion?",
-      "content": "Mechanical motion is the change in position of a body or its parts relative to other bodies over time. In simple terms, if a body moves, it’s undergoing mechanical motion."
-    },
-    {
-      "title": "Sub-branches of Mechanics",
-      "content": "Kinematics describes motion. Dynamics explains the causes of motion. Statics studies objects at rest or in equilibrium."
-    },
-    {
-      "title": "What is Matter?",
-      "content": "Matter is everything around us—what we see, touch, or feel. It includes all substances and particles. In simple terms, matter is 'everything that exists'."
-    },
-    {
-      "title": "Material Point",
-      "content": "A material point is an idealized model where a body’s mass is considered, but its size is neglected for simplicity."
-    },
-    {
-      "title": "Trajectory",
-      "content": "The trajectory is the path traced by a moving body. Example: a footprint in the snow or the smoke trail of a rocket."
-    },
-    {
-      "title": "Distance (Path)",
-      "content": "Distance is the length of the path a body travels. It is a scalar quantity and always positive."
-    },
-    {
-      "title": "Displacement",
-      "content": "Displacement is a vector from the starting point to the endpoint of motion, showing both magnitude and direction."
-    },
-    {
-      "title": "Velocity",
-      "content": "Velocity is the displacement per unit of time. It is a vector quantity.\nFormula: v = s / t (meters per second, m/s)."
-    },
-    {
-      "title": "Average Velocity",
-      "content": "Average velocity is the total displacement divided by total time.\nFormula: v_avg = total displacement / total time."
-    },
-    {
-      "title": "Additional Theory",
-      "content": "• Instantaneous velocity is velocity at a given moment. \n • Acceleration is the rate of change of velocity. \n • Uniform motion: velocity is constant. \n • Accelerated motion: velocity changes over time. \n • Basic equations: v = u + at, s = ut + ½at², v² = u² + 2as"
-    }
-  ]
-  
+  {
+    "title": "Физика деген не?",
+    "content": "'Физика' сөзі гректің 'physis' — 'табиғат' деген сөзінен шыққан. Бұл терминді алғаш Аристотель қолданса, орыс тіліне М.В. Ломоносов енгізген."
+  },
+  {
+    "title": "Құбылыстар деген не?",
+    "content": "Құбылыстар — айналамыздағы денелер мен заттарда болатын өзгерістер. Физикалық құбылыстар — заттың құрамын өзгертпей, тек күйі немесе қасиеті өзгеретін өзгерістер (мысалы, механикалық, жылулық, магниттік, жарық құбылыстары)."
+  },
+  {
+    "title": "Механика деген не?",
+    "content": "Механика — денелердің қозғалысын, сол қозғалыстың заңдылықтары мен себептерін зерттейтін физиканың бір бөлімі."
+  },
+  {
+    "title": "Кинематика деген не?",
+    "content": "Кинематика — механиканың қозғалысты себептерін ескермей, тек математикалық түрде сипаттайтын бөлімі."
+  },
+  {
+    "title": "Механикалық қозғалыс деген не?",
+    "content": "Механикалық қозғалыс — дененің немесе оның бөлігінің басқа денелерге қатысты уақыт өте орнын өзгертуі. Қарапайым тілмен айтқанда, дене қозғалып жатса — ол механикалық қозғалыста."
+  },
+  {
+    "title": "Механиканың бөлімдері",
+    "content": "Кинематика — қозғалысты сипаттайды. Динамика — қозғалыстың себептерін түсіндіреді. Статика — тыныштық күйіндегі немесе тепе-теңдіктегі денелерді зерттейді."
+  },
+  {
+    "title": "Зат деген не?",
+    "content": "Зат — бізді қоршаған барлық нәрсе: көретін, ұстайтын, сезінетін барлық денелер мен бөлшектер. Қарапайым тілмен айтқанда, зат — бар нәрсенің бәрі."
+  },
+  {
+    "title": "Материалдық нүкте",
+    "content": "Материалдық нүкте — дененің массасы ескеріліп, өлшемі ескерілмейтін идеал модель. Қарапайым есептерде жеңілдету үшін қолданылады."
+  },
+  {
+    "title": "Траектория",
+    "content": "Траектория — қозғалушы дененің қалдыратын ізі. Мысалы: қар үстіндегі із, зымыранның түтін ізі."
+  },
+  {
+    "title": "Жол (қашықтық)",
+    "content": "Жол — дене жүріп өткен траекторияның ұзындығы. Ол скаляр шама және әрқашан оң мәнге ие."
+  },
+  {
+    "title": "Орын ауыстыру",
+    "content": "Орын ауыстыру — қозғалыстың бас нүктесінен соңғы нүктесіне дейінгі бағытталған вектор. Ол бағыт пен шаманы көрсетеді."
+  },
+  {
+    "title": "Жылдамдық",
+    "content": "Жылдамдық — орын ауыстырудың уақытқа қатынасы. Векторлық шама.\nФормула: v = s / t (метр/секунд, м/с)."
+  },
+  {
+    "title": "Орташа жылдамдық",
+    "content": "Орташа жылдамдық — толық орын ауыстырудың толық уақытқа қатынасы.\nФормула: v_орташа = толық орын ауыстыру / толық уақыт."
+  },
+  {
+    "title": "Қосымша теория",
+    "content": "• Мезеттік жылдамдық — белгілі бір сәттегі жылдамдық. \n • Үдеу — жылдамдықтың өзгеру жылдамдығы. \n • Бірқалыпты қозғалыс: жылдамдық тұрақты. \n • Үдемелі қозғалыс: жылдамдық уақыт бойынша өзгереді. \n • Негізгі формулалар: v = u + at, s = ut + ½at², v² = u² + 2as"
+  }
+]
