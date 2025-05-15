@@ -2,7 +2,6 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
 
-// Dark mode setup from localStorage
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   modeText.innerText = "Light Mode";
@@ -23,19 +22,15 @@ window.addEventListener("load", () => {
   document.body.classList.remove("preload");
 });
 
-
 function showTheorySection() {
   document.getElementById("card-section").style.display = "grid";
   document.getElementById("theory-section").style.display = "none";
   document.getElementById("lessons-title").style.display = "block";
 
-  // Sidebar highlight
   document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
   document.querySelectorAll(".nav-link")[3].classList.add("active"); // Theory link
 }
 
-
-// Theory page logic
 async function showTheory() {
   const cardSection = document.getElementById("card-section");
   const theorySection = document.getElementById("theory-section");

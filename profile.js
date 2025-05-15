@@ -2,7 +2,6 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
 
-// Dark mode setup from localStorage
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   modeText.innerText = "Light Mode";
@@ -23,7 +22,6 @@ window.addEventListener("load", () => {
     document.body.classList.remove("preload");
   });
 
-// Show/hide password functionality
 document.querySelectorAll('.password-toggle').forEach(button => {
   button.addEventListener('click', function() {
       const input = this.previousElementSibling;

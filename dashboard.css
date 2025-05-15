@@ -1,4 +1,3 @@
-/* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -15,7 +14,6 @@ body.preload *::after {
 }
 
 :root {
-    /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #6D40CE;
     --primary-color: white;
@@ -23,12 +21,10 @@ body.preload *::after {
     --toggle-color: #DDD;
     --text-color: white;
 
-    /* ===== Transition ===== */
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
     --tran-05: all 0.5s ease;
-    
 }
 
 body {
@@ -46,7 +42,6 @@ body.dark {
     --text-color: #f2ebff;
 }
 
-/* Layout wrapper */
 .layout {
     display: flex;
     width: 100%;
@@ -106,7 +101,7 @@ body.dark .sidebar li a:hover .text {
 .sidebar li a:hover .text {
   color: var(--sidebar-color);
 }
-/* Active sidebar link - light mode */
+
 .sidebar li.active a {
   background: white;
 }
@@ -117,20 +112,19 @@ body.dark .sidebar li a:hover .text {
   font-weight: 600;
 }
 
-/* Active sidebar link - dark mode */
 body.dark .sidebar li.active a {
-  background: #4b3978; /* Light lavender shade for highlight */
+  background: #4b3978; 
 }
 
 body.dark .sidebar li.active a .icon,
 body.dark .sidebar li.active a .text {
-  color: white; /* Consistent with your purple theme */
+  color: white; 
 }
    
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* makes bottom section go down */
+    justify-content: space-between; 
     position: fixed;
     top: 0;
     left: 0;
@@ -149,7 +143,7 @@ body.dark .sidebar li.active a .text {
   }
   
   .menu-bar > div:last-child {
-    margin-top: auto; /* pushes toggle to bottom */
+    margin-top: auto; 
   }
   
   .mode {
@@ -320,7 +314,6 @@ body.dark .quote-card #quote-author{
     margin-right: 20px;
 }
 
-/* ACHIEVEMENT CARD */
 .achievement-title {
     margin-top: 5px;
     text-align: center;
@@ -430,7 +423,6 @@ body.dark .difficulty.easy {
   color: #c62828;
 }
 
-/* LAST LESSON CARD */
 .last-lesson {
     width: 50%;
     height: 530px;
@@ -504,9 +496,6 @@ body.dark .card-kinematics { --color: #795e25; }
     padding-top: 6px;
   }
 
-
-
-/* STREAK SYSTEM */
 .streaks {
     background-color: white;
     border-radius: 16px;

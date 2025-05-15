@@ -1,4 +1,3 @@
-/* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -15,7 +14,6 @@ body.preload *::after {
 }
 
 :root {
-    /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #6D40CE;
     --primary-color: white;
@@ -23,12 +21,10 @@ body.preload *::after {
     --toggle-color: #DDD;
     --text-color: white;
 
-    /* ===== Transition ===== */
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
-    --tran-05: all 0.5s ease;
-    
+    --tran-05: all 0.5s ease;    
 }
 
 body {
@@ -46,7 +42,6 @@ body.dark {
     --text-color: #f2ebff;
 }
 
-/* Layout wrapper */
 .layout {
     display: flex;
     width: 100%;
@@ -106,7 +101,7 @@ body.dark .sidebar li a:hover .text {
 .sidebar li a:hover .text {
   color: var(--sidebar-color);
 }
-/* Active sidebar link - light mode */
+
 .sidebar li.active a {
   background: white;
 }
@@ -117,20 +112,19 @@ body.dark .sidebar li a:hover .text {
   font-weight: 600;
 }
 
-/* Active sidebar link - dark mode */
 body.dark .sidebar li.active a {
-  background: #4b3978; /* Light lavender shade for highlight */
+  background: #4b3978; 
 }
 
 body.dark .sidebar li.active a .icon,
 body.dark .sidebar li.active a .text {
-  color: white; /* Consistent with your purple theme */
+  color: white; 
 }
    
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* makes bottom section go down */
+    justify-content: space-between; 
     position: fixed;
     top: 0;
     left: 0;
@@ -149,7 +143,7 @@ body.dark .sidebar li.active a .text {
   }
   
   .menu-bar > div:last-child {
-    margin-top: auto; /* pushes toggle to bottom */
+    margin-top: auto; 
   }
   
   .mode {
@@ -158,7 +152,6 @@ body.dark .sidebar li.active a .text {
     background: var(--primary-color-light);
     border-radius: 6px;
   }
-  
   
 .menu-bar .mode .moon-sun {
     height: 50px;
@@ -209,7 +202,6 @@ body.dark .sidebar li.active a .text {
 body.dark .switch::before {
     left: 24px;
 }
-  
 
 .moon-sun .sun {
     opacity: 0;
@@ -236,7 +228,6 @@ body.dark .moon-sun .moon {
     width: calc(100% - 270px);
 }
 
-/* Profile styles */
 .profile-section {
     background-color: white;
     border-radius: 15px;
@@ -308,7 +299,6 @@ body.dark .profile-name {
     margin-top: 15px;
 }
         
-/* Achievements section */
 .achievements-section {
     background-color: white;
     border-radius: 15px;
@@ -377,7 +367,6 @@ body.dark .achievement-card .achievement-title{
     color: white;
 }
         
-/* Topic sections */
 .topics-container {
     display: flex;
     gap: 20px;

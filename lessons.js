@@ -2,7 +2,6 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
 
-// Apply dark mode from saved setting
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   modeText.innerText = "Light Mode";
@@ -25,26 +24,20 @@ window.addEventListener("load", () => {
 });
 
 function showLessons() {
-    // Show lessons section, hide others
     document.getElementById("lessons-page").style.display = "block";
     document.querySelector(".lessons-container").style.display = "none";
     document.getElementById("quiz-section").style.display = "none";
     document.getElementById("main-wrapper").style.display = "none";
   
-  
-    // Sidebar active state
-    document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
-    document.querySelectorAll(".nav-link")[2].classList.add("active"); // Lessons link
+      document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
+    document.querySelectorAll(".nav-link")[2].classList.add("active"); 
   }
 
 function showLessonMap() {
-  // Hide all other views
   document.getElementById("lessons-page").style.display = "none";
 
-  // Show the map
   document.getElementById("main-wrapper").style.display = "block";
 
-  // Reset map visual state
   document.querySelector(".background").style.display = "block";
   document.querySelector(".buttons").style.display = "block";
   document.getElementById("quiz-section").style.display = "none";
@@ -53,9 +46,8 @@ function showLessonMap() {
     <div id="quiz-box">Click a level to start!</div>
   `;
 
-  // Sidebar highlight
   document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
-  document.querySelectorAll(".nav-link")[2].classList.add("active"); // Lessons
+  document.querySelectorAll(".nav-link")[2].classList.add("active"); 
 
   renderStarsOnMap(); 
 }
@@ -76,11 +68,9 @@ async function startQuiz() {
     current = 0;
     score = 0;
 
-    // Hide map
     document.querySelector(".background").style.display = "none";
     document.querySelector(".buttons").style.display = "none";
 
-    // Show quiz
     document.getElementById("quiz-section").style.display = "block";
     document.getElementById("quiz-section").innerHTML = `
       <h2>Physics Quiz</h2>
@@ -142,7 +132,6 @@ function showFinalResult() {
   if (score === questions.length) stars = 3;
   else if (score >= questions.length - 1) stars = 2;
 
-  // ✅ Сохраняем звезды в localStorage
   localStorage.setItem("level1Stars", stars);
 
   const starsHTML = `
@@ -179,7 +168,6 @@ function goBackToLessonMap() {
   document.querySelector(".background").style.display = "block";
   document.querySelector(".buttons").style.display = "block";
 
-  // ✅ Render updated stars
   renderStarsOnMap();
 }
 

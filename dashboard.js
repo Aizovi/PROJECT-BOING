@@ -2,7 +2,6 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
 
-// Dark mode setup from localStorage
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   modeText.innerText = "Light Mode";
@@ -37,12 +36,10 @@ fetch('https://quoteslate.vercel.app/api/quotes/random')
     document.getElementById("quote-author").textContent = "";
   });
 
-// Streak toggler
 function toggleCheck(el) {
     el.classList.toggle('checked');
 }
 
-// Show/hide password functionality
 document.querySelectorAll('.password-toggle').forEach(button => {
   button.addEventListener('click', function() {
       const input = this.previousElementSibling;

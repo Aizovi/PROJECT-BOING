@@ -2,7 +2,6 @@ const body = document.querySelector("body"),
       modeSwitch = body.querySelector(".toggle-switch"),
       modeText = body.querySelector(".mode-text");
 
-// Dark mode setup from localStorage
 if (localStorage.getItem("theme") === "dark") {
   body.classList.add("dark");
   modeText.innerText = "Light Mode";
@@ -30,7 +29,6 @@ function showProblems() {
     document.querySelector(".problem-list").style.display = "flex"; // 🔥 fix here
     document.querySelector("#problems-page .section-title").style.display = "block";
   
-    // Highlight correct nav
     document.querySelectorAll(".nav-link").forEach(link => link.classList.remove("active"));
     document.querySelectorAll(".nav-link")[4].classList.add("active"); // Problems index
   }

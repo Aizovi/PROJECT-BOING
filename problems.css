@@ -1,4 +1,3 @@
-/* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -15,7 +14,6 @@ body.preload *::after {
 }
 
 :root {
-    /* ===== Colors ===== */
     --body-color: #E4E9F7;
     --sidebar-color: #6D40CE;
     --primary-color: white;
@@ -23,12 +21,10 @@ body.preload *::after {
     --toggle-color: #DDD;
     --text-color: white;
 
-    /* ===== Transition ===== */
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
-    --tran-05: all 0.5s ease;
-    
+    --tran-05: all 0.5s ease;  
 }
 
 body {
@@ -46,7 +42,6 @@ body.dark {
     --text-color: #f2ebff;
 }
 
-/* Layout wrapper */
 .layout {
     display: flex;
     width: 100%;
@@ -106,7 +101,7 @@ body.dark .sidebar li a:hover .text {
 .sidebar li a:hover .text {
   color: var(--sidebar-color);
 }
-/* Active sidebar link - light mode */
+
 .sidebar li.active a {
   background: white;
 }
@@ -117,20 +112,19 @@ body.dark .sidebar li a:hover .text {
   font-weight: 600;
 }
 
-/* Active sidebar link - dark mode */
 body.dark .sidebar li.active a {
-  background: #4b3978; /* Light lavender shade for highlight */
+  background: #4b3978; 
 }
 
 body.dark .sidebar li.active a .icon,
 body.dark .sidebar li.active a .text {
-  color: white; /* Consistent with your purple theme */
+  color: white; 
 }
    
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* makes bottom section go down */
+    justify-content: space-between; 
     position: fixed;
     top: 0;
     left: 0;
@@ -149,7 +143,7 @@ body.dark .sidebar li.active a .text {
   }
   
   .menu-bar > div:last-child {
-    margin-top: auto; /* pushes toggle to bottom */
+    margin-top: auto; 
   }
   
   .mode {
@@ -210,19 +204,16 @@ body.dark .switch::before {
     left: 24px;
 }
   
-/* Hide sun icon by default */
 .moon-sun .sun {
     opacity: 0;
     transition: var(--tran-03);
   }
   
-  /* Show moon icon by default */
   .moon-sun .moon {
     opacity: 1;
     transition: var(--tran-03);
   }
   
-  /* When dark mode is active, toggle visibility */
   body.dark .moon-sun .sun {
     opacity: 1;
   }
@@ -230,9 +221,6 @@ body.dark .switch::before {
   body.dark .moon-sun .moon {
     opacity: 0;
   }
-
-  
-  /* === Problems Section === */
 
 #problems-page {
     margin-left: 250px;
@@ -304,9 +292,7 @@ body.dark .switch::before {
   .start-btn:hover {
     background-color: rgba(255, 255, 255, 0.4);
   }
-  
-  /* === Individual Problem View === */
-  
+    
   #problem-section {
     width: calc(100% - 270px);
   }
@@ -372,7 +358,6 @@ body.dark .switch::before {
     background-color: #7b7bff;
   }
   
-  /* Light mode card colors */
   .card-problem-kinematics    { --color: #f7d276; }
   .card-problem-dynamics      { --color: #be3455; }
   .card-problem-statics       { --color: #a787f7; }
